@@ -1,5 +1,6 @@
 # !/usr/bin/python3
 # -*- coding:utf-8 -*-
+
 '''
 
 title: 完全面向过程的三层神经网络模型
@@ -42,10 +43,10 @@ def sigmoid(z):
 def dersig(y):
     return y * (1 - y)
 
-
 for epoch in range(epoches):
 
     '''前向传播'''
+    
     # 输入层 -> 隐藏层 / 隐藏层激活
     net_h1 = i1 * weight[0] + i2 * weight[1] + bias[0]
     out_h1 = sigmoid(net_h1)
@@ -61,7 +62,6 @@ for epoch in range(epoches):
     # 每一次迭代的误差
     print('epoch:', str(epoch + 1), '\n', 'target1:', str(target1 - out_o1), ',target2:', str(target2 - out_o2))
     # 每一次迭代的结果
-
     print('outputs:', '\n', 'y1:', str(out_o1), '\n', 'y2:', str(out_o2))
 
     # 来自o1和o2的误差
@@ -132,7 +132,6 @@ for epoch in range(epoches):
     # 总误差 对 w8 的偏导数
     par_e_total_par_w8 = par_e_total_par_out_o2 * par_out_o2_par_net_o2 * par_net_o2_par_w8
 
-
     # 总误差 对 h1节点 的偏导数
     par_e_total_par_net_h1 = \
         par_e_total_par_out_o1 * par_out_o1_par_net_o1 * par_net_o1_par_out_h1 * par_out_h1_par_net_h1 +\
@@ -169,7 +168,6 @@ for epoch in range(epoches):
     weight[7] -= alpha * par_e_total_par_w8
     bias[0] -= alpha * par_e_total_par_b1
     bias[1] -= alpha * par_e_total_par_b2
-
 
 # 输出权重
 print('final :', '\n', 'weight:', weight, '\n', 'bias:', bias)
