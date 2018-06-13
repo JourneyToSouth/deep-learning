@@ -2,9 +2,13 @@
 # -*- coding:utf-8 -*-
 '''
 
-title:完全面向过程的三层神经网络模型
+title: 完全面向过程的三层神经网络模型
 
 Author : Ining
+
+Reference： 
+  https://www.cnblogs.com/charlotte77/p/5629865.html
+  https://blog.csdn.net/tudaodiaozhale/article/details/78632931
 
 update date :
   2018.6.5
