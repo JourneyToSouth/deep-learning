@@ -3,15 +3,15 @@
 
 '''
 
-title: 完全面向过程的三层神经网络模型
+Title : 完全面向过程的三层神经网络模型
 
 Author : Ining
 
-Reference： 
+Reference ： 
   https://www.cnblogs.com/charlotte77/p/5629865.html
   https://blog.csdn.net/tudaodiaozhale/article/details/78632931
 
-update date :
+Update date :
   2018.6.5
   - 无法设置测试集 ：代入真实数据的时候再设置
   - 训练样本小 ：以后代入数量多一些的真实数据
