@@ -3,7 +3,7 @@
 
 '''
 
-Title :向量化三层神经网络
+Title : 向量化三层神经网络
 
 Author : Ining
 
